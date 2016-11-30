@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../animate/animate.min.css">
+    <script src="../js/jquery-2.0.3.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+
+    <script charset="GB2312" src="../js/account1.js"></script>
+    <script charset="GB2312" src="../js/manage_angular.js"></script>
+    <title></title>
+    <script>
+
+    </script>
+</head>
+<body>
+<div class="container">
+   <header>
+       <div class="row">
+           <div class="col-sm-4">logo</div>
+           <div class="col-sm-2"><div class=" part part1">任务<div class="icon"></div></div></div>
+           <div class="col-sm-2"><div class=" part part2">考核<div class="icon"></div></div></div>
+           <div class="col-sm-2"><div class=" part part3">管理<div class="icon"></div></div></div>
+           <div class="col-sm-2"><div class=" part part4">设置<div class="icon"></div></div></div>
+       </div>
+
+   </header>
+    <div class="content">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="menuList">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="active"><a href="#home" data-toggle="tab">学生信息</a></li>
+                        <li><a href="#svn" data-toggle="tab">学生课程</a></li>
+                        <li><a href="#ios" data-toggle="tab">学生考核</a></li>
+                        <li><a href="#vb" data-toggle="tab">学生奖惩</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="home">
+                        <div ng-app="module2" ng-controller="control2">
+
+                            <table class="table table-bordered  table-hover">
+                                <thead>
+                                <tr>
+                                    <th>账号</th>
+                                    <th>密码</th>
+                                    <th>姓名</th>
+                                    <th>性别</th>
+                                    <th>电话</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr ng-repeat="user in employee">
+                                    <td>{{user.acc}}</td>
+                                    <td>{{user.password}}</td>
+                                    <td>{{user.name}}</td>
+                                    <td>{{user.sex}}</td>
+                                    <td>{{user.tel}}</td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <!--分页条-->
+                            <div class="paginate">
+                                <ul class="pagination">
+                                    <li><a ng-click="previousPage()" class="previous btn"  href="#">&laquo;</a></li>
+                                    <li ng-repeat="number in pageNumber"><a ng-click="checkPage(number)" href="#">{{number}}</a></li>
+
+                                    <li><a ng-click="nextPage()" class="next btn" href="#">&raquo;</a></li>
+                                </ul>
+                            </div>
+                            <!--分页条-->
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="svn">svn</div>
+                    <div class="tab-pane fade" id="ios">ios</div>
+                    <div class="tab-pane fade" id="vb">vb</div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <footer></footer>
+</div>
+</body>
+</html>

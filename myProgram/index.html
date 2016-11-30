@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title></title>
+
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="animate/animate.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="animate/animate.min.css"></script>
+    <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+    <script src="js/angularmodule1.js"></script>
+
+<script>
+    $(function(){
+        document.getElementById("module1").addEventListener("webkitAnimationEnd", function(){
+
+//            this.removeClass(".swing");
+        });
+        document.getElementById("module1").addEventListener('animationend',function(){
+
+           $(this).removeClass("swing");
+
+        });
+        document.getElementById("module2").addEventListener('animationend',function(){
+
+            $(this).removeClass("swing");
+
+        });
+        document.getElementById("module3").addEventListener('animationend',function(){
+
+            $(this).removeClass("swing");
+
+        });
+        document.getElementById("module4").addEventListener('animationend',function(){
+
+            $(this).removeClass("swing");
+
+        });
+    });
+
+
+</script>
+
+</head>
+<body class="page">
+<div class="container">
+    <div class="row">
+
+        <div class="col-sm-3">
+            <div class="module animated swing" id="module1">
+                <div class="image1"></div>
+                <div class="image3"></div>
+                <div class="clearposition"></div>
+                <div class="title"><a href="html/aboutMe.html">ABOUT ME</a></div>
+                <div class="image2"></div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+             <div class="module animated swing" id="module2">
+                 <div class="image1"></div>
+                 <div class="image3"></div>
+                 <div class="clearposition"></div>
+                 <div class="title"><a href="html/program.html">PROGRAM</a></div>
+                 <div class="image2"></div>
+             </div>
+        </div>
+        <div class="col-sm-3">
+             <div class="module animated swing" id="module3">
+                 <div class="image1"></div>
+                 <div class="image3"></div>
+                 <div class="clearposition"></div>
+                 <div class="title"><a href="html/noteBook.html">NOTE BOOK</a></div>
+                 <div class="image2"></div>
+             </div>
+        </div>
+        <div class="col-sm-3">
+             <div class="module animated swing" id="module4">
+                 <div class="image1"></div>
+                 <div class="image3"></div>
+                 <div class="clearposition"></div>
+                 <div class="title"><a href="html/collection.html">COLLECTION</a></div>
+                 <div class="image2"></div>
+             </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

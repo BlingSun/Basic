@@ -1,0 +1,169 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+html,body{
+    width:100%;
+    height: 100%;
+}
+/*±³¾°*/
+.page {
+
+    background: #ddd6f3; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #ddd6f3, #faaca8); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ddd6f3, #faaca8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.page2{
+
+    background: #616161; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #616161 , #9bc5c3); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #616161 , #9bc5c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.page3{
+
+
+    background: #093028; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #093028 , #237A57); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #093028 , #237A57); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.clearposition{
+    height:1px;
+}
+
+/*Ä£¿é*/
+.module{
+    /*width:20%;*/
+    height: 400px;
+    background-color: #e8e8e8;
+    /*margin-left:4%;*/
+    /*float: left;*/
+    margin-top:100px;
+    text-align: center;
+    position:relative;
+
+}
+
+.module:hover{
+    -webkit-animation-name: swing;
+    animation-name: swing;
+    /*-webkit-animation-duration: 1s;*/
+    /*animation-duration: 1s;*/
+    /*-webkit-animation-fill-mode: both;*/
+    /*animation-fill-mode: both*/
+}
+
+.module .title{
+    margin-top:30%;
+    font-weight: bolder;
+    font-size:20px;
+}
+
+.module .image1{
+    width:30px;
+    height:30px;
+    background-color: #093028;
+    position:absolute;
+    left:50px;
+    top:-20px;
+}
+.module .image3{
+    width:30px;
+    height:30px;
+    background-color: #093028;
+    position: absolute;
+    right: 50px;
+    top:-20px;
+}
+
+#module1 .image2{
+    width:60px;
+    height:60px;
+    /*background-color: #ff6928;*/
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:50%;
+    background-image: url(../img/aboutme.png);
+    background-size:cover;
+}
+#module1:hover .image2{
+
+    background-image: url(../img/aboutme1.png);
+    -webkit-animation-name: rotate;
+    animation-name: rotate;
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+
+}
+
+
+#module2 .image2{
+    width:60px;
+    height:60px;
+    /*background-color: #ff6928;*/
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:50%;
+    background-image: url(../img/program.png);
+    background-size:cover;
+}
+#module2:hover .image2{
+
+    background-image: url(../img/program1.png);
+    -webkit-animation-name: rotate;
+    animation-name: rotate;
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+
+
+#module3 .image2{
+    width:60px;
+    height:60px;
+    /*background-color: #ff6928;*/
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:50%;
+    background-image: url(../img/note.png);
+    background-size:cover;
+}
+#module3:hover .image2{
+
+    background-image: url(../img/d.png);
+    -webkit-animation-name: rotate;
+    animation-name: rotate;
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+
+#module4 .image2{
+    width:60px;
+    height:60px;
+    /*background-color: #ff6928;*/
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:50%;
+    background-image: url(../img/collection.png);
+    background-size:cover;
+}
+#module4:hover .image2{
+
+    background-image: url(../img/collection1.png);
+    -webkit-animation-name: rotate;
+    animation-name: rotate;
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}

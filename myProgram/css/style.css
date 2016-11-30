@@ -1,0 +1,84 @@
+
+.login{
+    height:300px;
+    border:1px solid rgba(53,118,159,0.8);
+    margin-top:200px;
+    box-shadow:0 0 10px rgba(0, 204, 204, .5);
+}
+
+/*manage_index.html*/
+body{
+    /*background-color: #090909;*/
+}
+header{
+
+}
+
+header .part{
+    width:60px;
+    height:50px;
+    margin-top:30px;
+    margin-bottom: 30px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #dff0d8;
+    border-radius:20px;
+    border:1px solid rgba(53,118,159,0.8);
+    box-shadow:0 0 10px rgba(0, 204, 204, .5);
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+}
+
+.part:hover{
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+/*.part:before{*/
+    /*content:"";*/
+    /*width:0px;*/
+    /*height:0px;*/
+    /*border-width: 6px 10px;*/
+    /*border-style:solid;*/
+    /*border-color: #ffffff #ffffff #00CCCC #ffffff;*/
+    /*position: absolute;*/
+    /*bottom:-18px;*/
+    /*left:20px;*/
+/*}*/
+
+.icon{
+    content:"";
+    width:10px;
+    height:10px;
+    border-width: 6px 10px;
+    border-style:solid;
+    border-color: #ffffff #ffffff #00CCCC #ffffff;
+    position: absolute;
+    bottom:-18px;
+    left:20px;
+    display: none;
+}
+
+.part:hover .icon{
+    display: block;
+}
+
+
+
+table tr:nth-child(odd)	{
+    /*background-color: #abcca6;*/
+}
+table tr:nth-child(even) {
+    background-color: #dff0d8;
+}
+
+/*∑÷“≥Ãıæ”÷–*/
+.paginate{
+    width:232px;
+    margin: 0 auto;
+}
+/*manage_index.html*/

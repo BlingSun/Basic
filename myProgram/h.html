@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+    <script>
+        $(function(){
+
+        });
+
+
+    </script>
+
+</head>
+<body>
+
+<div ng-app="module1" ng-controller="control1">
+    <p>名字 : <input type="text" ng-model="firstName"></p>
+    <p>mingzi : <input type="text" ng-model="lastName"></p>
+    <h1>{{firstName}},{{lastName}}</h1>
+</div>
+<script>
+    var app=angular.module("module1",[]);
+    app.controller("control1",function($scope){
+        $scope.firstName="hello";
+        $scope.lastName="shenDuanhe";
+    });
+</script>
+</body>
+</html>
